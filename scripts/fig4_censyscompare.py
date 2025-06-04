@@ -6,7 +6,7 @@ from censys.search import CensysHosts
 import math
 
 # 1. Load LLM‐generated hosts
-llm_df = pd.read_csv('combined_hosts.csv', header=None, names=['host'])
+llm_df = pd.read_csv('data/raw/llm_hosts.csv', header=None, names=['host'])
 llm_hosts = set(llm_df['host'].str.lower())
 
 # 2. Define manual keywords and build a full-text query

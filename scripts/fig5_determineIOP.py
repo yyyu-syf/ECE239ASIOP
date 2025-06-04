@@ -35,7 +35,7 @@ client = OpenAI(api_key=openai_api_key)
 # —––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—
 #  1. Load candidate hosts
 # —––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—
-df = pd.read_csv("manual_llm_overlap.csv")  # expects columns: host,category
+df = pd.read_csv("data/raw/manual_llm_overlap.csv")  # expects columns: host,category
 df["html_title"]   = ""
 df["body_snippet"] = ""
 df["is_pharmacy"]  = False
